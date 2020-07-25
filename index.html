@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>thecodepack</title>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    
+
+
+</head>
+
+<body>
+  <style>
+   
+    
+    .nav-link {
+      display: -webkit-inline-box;
+      padding: .5rem 1rem;
+
+    }
+
+
+    element.style {
+      text-decoration-line: unset;
+      justify-content: center;
+      margin-top: 9px;
+
+    }
+
+    .logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    .code{
+      font-weight: 700;
+    }
+  </style>
+
+
+  <!-- // this is navbar code -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand btn-outline-dark" href="#"></a>
+    <img class="logo" src="img/logo1.png" style="width: 40px;" style="height: 35px;" style="margin-bottom: 20px;">
+    <h4 class="code" style="color: greenyellow;">&nbsp;&nbsp;thecodepack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </h4>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <h5 id="home">Home</h5>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            <h5 id="about">About</h5>
+          </a>
+        </li>
+        <li class="nav-item dropdown" style="max-width: inherit;">
+          <a class="nav-link dropdown-toggle" href="topics.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h5>Topics</h5>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">technology</a>
+            <a class="dropdown-item" href="#">Self-improvement</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Our efforts</a>
+            <a class="dropdown-item" href="#">Support us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            <h5>Contact</h5>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blogs.html">
+            <h5>Blogs</h5>
+          </a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+
+
+
+        <button type="button" class="btn btn-outline-warning my-2 mx-2 my-sm-0" class="btn btn-primary"
+          data-toggle="modal" data-target="#signupModal">
+          sign up
+        </button>
+        <button type="button" class="btn btn-outline-danger my-2 mx-2 my-sm-0" class="btn btn-primary"
+          data-toggle="modal" data-target="#loginModal">
+          login
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- this is modal1 -->
+
+
+
+  <!--  sign up Modal  -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: lavenderblush;">
+          <h4 class="modal-title" id="signupModalLabel">Create your free account</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"> Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-warning">Create an account</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--  login  Modal  -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: lavenderblush;">
+          <h4 class="modal-title" id="loginModalLabel">Login to your account</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Login</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- this is corousel code -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" class="font-weight-bold">
+      <div class="carousel-item active">
+
+
+
+
+        <img src="img/bg10.jpg" class="d-block w-100" alt="" height="600px" no-repeat>
+
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-warning" class="font-weight-bold">Welcome to thecodepack.com</h2>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bg11.jpg" class="d-block w-100" alt="" height="600px">
+        <div class="carousel-caption d-none d-md-block">
+
+          <h2 class="text-warning" class="font-weight-bold">best place to acquire new skills</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bg12.jpg" class="d-block w-100" alt="" height="600px">
+        <div class="carousel-caption d-none d-md-block">
+
+          <h2 class="text-warning" class="font-weight-bold">“Truth can only be found in one place: the code.”</h2>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- <div class="mytext" style="margin-top: 50px;">
+    <h1 style="text-align: center; " >We provide best services across globe</h1>
+  </div>
+  <div class="mytext">
+    <h1 style="text-align: center; margin-top: 8px;">take a look!</h1>
+  </div> -->
+
+
+
+
+
+
+
+
+  <!-- this is card  -->
+  <style>
+    .container {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      position: relative;
+
+    }
+  </style>
+
+  <div class="py-8 py-md-11 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h24v24H0z"></path>
+                <path d="M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA"></path>
+                <path d="M7 13h10a4 4 0 110 8H7a4 4 0 110-8zm10 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA" opacity=".3">
+                </path>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Built for developers
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            thecodepack is built to make your life easier. Variables, build tooling, documentation, and reusable
+            components.
+          </p>
+
+        </div>
+        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h24v24H0z"></path>
+                <path
+                  d="M5.5 4h4A1.5 1.5 0 0111 5.5v1A1.5 1.5 0 019.5 8h-4A1.5 1.5 0 014 6.5v-1A1.5 1.5 0 015.5 4zm9 12h4a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-1a1.5 1.5 0 011.5-1.5z"
+                  fill="#335EEA"></path>
+                <path
+                  d="M5.5 10h4a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-7A1.5 1.5 0 015.5 10zm9-6h4A1.5 1.5 0 0120 5.5v7a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-7A1.5 1.5 0 0114.5 4z"
+                  fill="#335EEA" opacity=".3"></path>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Designed to be modern
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Designed with the latest design trends in mind. thecodepack feels modern, minimal, and beautiful.
+          </p>
+
+        </div>
+        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h24v24H0z"></path>
+                <path
+                  d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                  fill="#335EEA"></path>
+                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16"
+                  rx="1"></rect>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Documentation for everything
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-0">
+            We've written extensive documentation for components and tools, so you never have to reverse engineer
+            anything.
+          </p>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+
+
+
+
+  </div>
+
+  <!-- images section -->
+
+
+  <img src="img/logo3.png" style="width: 100%;">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      
+      
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {
+      margin: 0 -5px;
+      margin-top: 50px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color: lightgreen;
+    }
+
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .rounded-circle{
+      
+      width: 45%;
+      height: 45%;
+    }
+    
+  </style>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div>
+
+          <!-- Background color -->
+
+
+          <!-- Avatar -->
+          <div >
+            <img src="img/gates.jpg" class="rounded-circle img-responsive" alt="woman avatar" >
+          </div>
+
+          <!-- Content -->
+          <div>
+            <!-- Name -->
+            <h4>Bill Gates</h4>
+            <hr>
+            <!-- Quotation -->
+            <p> “Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.”
+            </p><hr><p> Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <!-- another card -->
+
+    <div class="column">
+      <div class="card">
+        <div>
+
+          <!-- Background color -->
+
+
+          <!-- Avatar -->
+          <div>
+            <img src="img/musk.jpg"
+              class="rounded-circle img-responsive" alt="woman avatar">
+          </div>
+
+          <!-- Content -->
+          <div>
+            <!-- Name -->
+            <h4>Elon Musk</h4>
+            <hr>
+            <!-- Quotation -->
+            <p> “I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.”</p>
+          </p><hr><p>the CEO of Tesla Inc. and SpaceX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <!-- another card -->
+
+    <div class="column">
+      <div class="card">
+        <div>
+
+          <!-- Background color -->
+
+
+          <!-- Avatar -->
+          <div>
+            <img src="img/mark2.jpg" class="rounded-circle img-responsive" alt="woman avatar" >
+          </div>
+
+          <!-- Content -->
+          <div>
+            <!-- Name -->
+            <h4>Mark Zuckerberg</h4>
+            <hr>
+            <!-- Quotation -->
+            <p>“People can be really smart or have skills that are directly applicable, but if they don’t really believe in it, then they are not going to really work hard.”</p>
+          <hr>
+          <p> the chairman, chief executive officer, and co-founder of Facebook </p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <!-- another card -->
+
+    <div class="column">
+      <div class="card">
+        <div>
+
+          <!-- Background color -->
+
+
+          <!-- Avatar -->
+          <div>
+            <img src="img/steve.jpg"
+              class="rounded-circle img-responsive" alt="woman avatar">
+          </div>
+
+          <!-- Content -->
+          <div>
+            <!-- Name -->
+            <h4>Steve Jobs</h4>
+            <hr>
+            <!-- Quotation -->
+            <p>“Don't worry if it doesn't work right [when coding]. If everything did, you'd be out of a job.”<br><br></p>
+            <hr>
+            <p> the co-founder, chief executive and chairman of Apple Computer<br> </p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .footer {
+      margin-top: unset;
+    }
+  </style>
+
+
+
+
+
+
+
+
+  <!-- this is footer -->
+  <div class="footer pt-11 pb-3 bg-dark text-base">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="mb-4">
+            <h4 class="mb-4 text-white">About</h4>
+            <ul class="list-unstyled list-group">
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Meet Coach</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Press</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Social Feed</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link"> Help</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="mb-4">
+            <h4 class="mb-4 text-white ">Blog</h4>
+            <ul class="list-unstyled list-group ">
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Business Coaching</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Relationship</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Leadership</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Life Coaching</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Time Management</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="mb-4">
+            <h4 class="mb-4 text-white ">Resources</h4>
+            <ul class="list-unstyled list-group ">
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Online Courses</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link"> Books Meditation</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link"> Podcast</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Albums</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Download App</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="mb-4">
+            <h4 class="mb-4 text-white ">Follow Me</h4>
+            <ul class="list-unstyled list-group">
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Instagram</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link"> Facebook</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link"> LinkedIn</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">YouTube</a></li>
+              <li class="list-group-item"><a href="#" class="list-group-item-link">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-8 col-12">
+          <div class="mb-4">
+            <h4 class="mb-4 text-white ">Subscribe to our newsletter</h4>
+            <div class="">
+              <p>Subscribe to get notified daily new motivational &amp; inspiration tips.</p>
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control border-white" placeholder="Email Address" required="">
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="mt-8">
+            <ul class="list-inline">
+              <li class="list-inline-item">© 2020 Coach, Inc.</li>
+              <li class="list-inline-item"><a href="#" class="text-reset"> Privacy Policy </a></li>
+              <li class="list-inline-item"><a href="#" class="text-reset"> Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
